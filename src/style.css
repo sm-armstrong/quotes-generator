@@ -72,6 +72,10 @@ form {
     border-left: 3px solid #6ef3d6;
 }
 
+.quote strong {
+    color: #023020;
+}
+
 footer {
     border-top: 1px dashed #6ef3d6;
     padding: 30px 0 0 0;
