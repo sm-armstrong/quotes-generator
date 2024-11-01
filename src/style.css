@@ -36,11 +36,19 @@ a {
 }
 
 form {
-    padding: 30px;
-    /* background-color: white; */
-    border-radius: 10px;
     display: flex;
+}
+
+.form-container {
+    padding: 15px 20px;
+    border-radius: 10px;
     margin-bottom: 30px;
+}
+
+.hint {
+    line-height: 1.5;
+    font-size: 13px;
+    margin-top: 5px;
 }
 
 .instructions {
@@ -72,6 +80,10 @@ form {
     border-left: 3px solid #6ef3d6;
 }
 
+.hidden {
+    display: none;
+}
+
 .quote strong {
     color: #023020;
 }
@@ -82,4 +94,20 @@ footer {
     text-align: center;
     font-size: 13px;
     color: rgba(0, 0, 0, 0.7);
+}
+
+.generating {
+    animation: blink-animation 1s step-start(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
 }
